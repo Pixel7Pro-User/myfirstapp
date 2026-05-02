@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:clipChildren="false">
+
+    <!-- Наш "Динозаврик" (просто квадрат для примера) -->
+    <View
+        android:id="@+id/dino"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="50dp"
+        android:background="#535353" />
+
+    <!-- Кактус -->
+    <View
+        android:id="@+id/cactus"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="100dp"
+        android:background="#ff0000" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="50dp"
+        android:text="Score: 0"
+        android:textSize="24sp" />
+</FrameLayout>
